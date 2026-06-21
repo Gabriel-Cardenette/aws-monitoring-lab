@@ -1,12 +1,10 @@
 # AWS Monitoring Lab
 
-Hands-on AWS monitoring and alerting project using EC2, CloudWatch, SNS and IAM.
+Hands-on AWS monitoring project using Amazon EC2, Amazon CloudWatch and Amazon SNS.
 
-## Project Overview
+## Objective
 
-This project demonstrates the implementation of a monitoring and alerting solution in AWS.
-
-The objective is to monitor EC2 instances, create CloudWatch alarms and send automated notifications through Amazon SNS whenever predefined thresholds are exceeded.
+Demonstrate the implementation of a monitoring solution capable of detecting high CPU utilization on an EC2 instance and automatically sending email notifications through Amazon SNS.
 
 ## Architecture
 
@@ -33,42 +31,86 @@ Email Notification
 * Amazon SNS
 * AWS IAM
 
-## Monitoring Scenarios
+## Implementation Steps
 
-### CPU Utilization Alert
+### 1. EC2 Provisioning
 
-* Metric: CPUUtilization
-* Threshold: Above 70%
-* Evaluation Period: 5 minutes
-* Action: Send SNS notification
+* Created an Ubuntu 24.04 LTS EC2 instance
+* Configured Security Group for SSH access
+* Connected to the instance using a PEM key
 
-### Instance Status Check
+### 2. SNS Configuration
 
-* Metric: StatusCheckFailed
-* Threshold: Greater than 0
-* Action: Send SNS notification
+* Created an SNS Topic
+* Added email subscription
+* Confirmed subscription via email
+
+### 3. CloudWatch Alarm Configuration
+
+* Selected CPUUtilization metric
+* Configured threshold above 70%
+* Linked alarm to SNS Topic
+
+### 4. Alarm Validation
+
+A CPU stress test was executed to trigger the alarm and validate the monitoring workflow.
+
+```bash
+yes > /dev/null &
+```
+
+## Results
+
+The CloudWatch Alarm successfully detected CPU utilization above the configured threshold and automatically sent an email notification through Amazon SNS.
 
 ## Evidence
 
-Screenshots of the implementation will be stored in the `screenshots` folder.
+### EC2 Instance Running
 
-## Learning Outcomes
+(Add screenshot)
 
-* CloudWatch Metrics
-* CloudWatch Alarms
-* SNS Notifications
-* IAM Permissions
-* AWS Monitoring Best Practices
+### SNS Topic and Subscription
 
-## Future Improvements
+(Add screenshot)
 
-* Auto Scaling integration
-* CloudWatch Dashboard
-* Lambda notifications
-* Multi-instance monitoring
+### CloudWatch Alarm Triggered
+
+(Add screenshot)
+
+### Email Notification Received
+
+(Add screenshot)
+
+## Skills Demonstrated
+
+* Amazon EC2
+* Amazon CloudWatch
+* Amazon SNS
+* Monitoring and Alerting
+* Linux Administration
+* SSH Access Management
+* Cloud Operations
 
 ## Author
 
 Gabriel Paes Cardenette
 
-AWS Certified Cloud Practitioner (CLF-C02)
+LinkedIn:
+linkedin.com/in/gabriel-paes-cardenette-b604b6235
+
+### Certifications
+
+* AWS Certified Cloud Practitioner (CLF-C02)
+* Cisco Networking Basics
+* Cisco Introduction to Cybersecurity
+
+### Technologies
+
+* AWS
+* Linux
+* CloudWatch
+* SNS
+* EC2
+* IAM
+* SSH
+
