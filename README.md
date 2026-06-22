@@ -8,21 +8,7 @@ Demonstrate the implementation of a monitoring solution capable of detecting hig
 
 ## Architecture
 
-```text
-EC2 Instance
-     │
-     ▼
-CloudWatch Metrics
-     │
-     ▼
-CloudWatch Alarm
-     │
-     ▼
-SNS Topic
-     │
-     ▼
-Email Notification
-```
+![Architecture Diagram](diagrams/architecture-diagram.png)
 
 ## AWS Services Used
 
