@@ -7,7 +7,7 @@ Hands-on AWS monitoring project using Amazon EC2, Amazon CloudWatch and Amazon S
 Demonstrate the implementation of a monitoring solution capable of detecting high CPU utilization on an EC2 instance and automatically sending email notifications through Amazon SNS.
 
 ## Architecture
-
+This architecture demonstrates how Amazon CloudWatch monitors an EC2 instance and triggers notifications through Amazon SNS when the defined CPU threshold is exceeded.
 ![Architecture Diagram](diagrams/architecture-diagram.png)
 
 ## AWS Services Used
