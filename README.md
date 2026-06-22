@@ -67,19 +67,28 @@ The CloudWatch Alarm successfully detected CPU utilization above the configured 
 
 ### EC2 Instance Running
 
-(Add screenshot)
+![EC2 Running](screenshots/ec2-running.png)
 
-### SNS Topic and Subscription
+### SSH Connection Successful
 
-(Add screenshot)
+![SSH Connection](screenshots/ssh-connection-success.png)
+
+### SNS Topic and Subscription Confirmed
+
+![SNS Topic](screenshots/sns-topic-confirmed.png)
+
+### CloudWatch Alarm Created
+
+![CloudWatch Alarm Created](screenshots/cloudwatch-alarm-created.png)
 
 ### CloudWatch Alarm Triggered
 
-(Add screenshot)
+![CloudWatch Alarm Triggered](screenshots/cloudwatch-alarm-triggered.png)
 
 ### Email Notification Received
 
-(Add screenshot)
+![Email Notification](screenshots/sns-email-alert.png)
+
 
 ## Skills Demonstrated
 
