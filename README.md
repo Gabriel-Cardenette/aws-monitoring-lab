@@ -66,26 +66,32 @@ The CloudWatch Alarm successfully detected CPU utilization above the configured 
 ## Evidence
 
 ### EC2 Instance Running
+Ubuntu 24.04 EC2 instance successfully deployed and running in AWS.
 
 ![EC2 Running](screenshots/ec2-running.png)
 
 ### SSH Connection Successful
+Secure SSH access established using a PEM key.
 
 ![SSH Connection](screenshots/ssh-connection-success.png)
 
 ### SNS Topic and Subscription Confirmed
+SNS topic created and email subscription successfully confirmed.
 
 ![SNS Topic](screenshots/sns-topic-confirmed.png)
 
 ### CloudWatch Alarm Created
+CloudWatch alarm configured to monitor CPU utilization above 70%.
 
 ![CloudWatch Alarm Created](screenshots/cloudwatch-alarm-created.png)
 
 ### CloudWatch Alarm Triggered
+Alarm successfully triggered after CPU stress test execution.
 
 ![CloudWatch Alarm Triggered](screenshots/cloudwatch-alarm-triggered.png)
 
 ### Email Notification Received
+Amazon SNS email notification received after alarm activation.
 
 ![Email Notification](screenshots/sns-email-alert.png)
 
@@ -105,7 +111,7 @@ The CloudWatch Alarm successfully detected CPU utilization above the configured 
 Gabriel Paes Cardenette
 
 LinkedIn:
-linkedin.com/in/gabriel-paes-cardenette-b604b6235
+https://linkedin.com/in/gabriel-paes-cardenette-b604b6235
 
 ### Certifications
 
